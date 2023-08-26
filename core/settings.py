@@ -38,8 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'todo.apps.TodoConfig'
+    'todo.apps.TodoConfig',
+    'rest_framework'
+
 ]
+REST_FRAMEWORK={
+    'DEFAULF_PERMISSION_CLASSES':[
+        'rest_framework.permissions.AllowAny'
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
